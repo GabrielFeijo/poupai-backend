@@ -41,8 +41,8 @@ A **PoupAí API** é uma API REST robusta e moderna para gestão financeira pess
 1. **Clone o repositório**
 
    ```bash
-   git clone https://github.com/GabrielFeijo/poupai-api.git
-   cd poupai-api
+   git clone https://github.com/GabrielFeijo/poupai-backend.git
+   cd poupai-backend
    ```
 
 2. **Instale as dependências**
@@ -70,7 +70,7 @@ A **PoupAí API** é uma API REST robusta e moderna para gestão financeira pess
    NODE_ENV=development
 
    # CORS Configuration
-   CORS_ALLOWED_ORIGINS="http://localhost:5173,http://localhost:3000"
+   FRONTEND_URL="http://localhost:5173"
 
    # Swagger Documentation (Opcional)
    SWAGGER_USER="admin"
