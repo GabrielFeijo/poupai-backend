@@ -16,21 +16,9 @@ export class ExternalApiController {
 		return await this.externalApiService.getCurrencyRates();
 	}
 
-	@Get('indices')
-	@ApiOperation({ summary: 'Get Brazilian financial indices' })
-	getBrazilianIndices() {
-		return this.externalApiService.getBrazilianIndices();
-	}
-
 	@Get('crypto')
 	@ApiOperation({ summary: 'Get cryptocurrency prices' })
 	getCryptoPrices() {
 		return this.externalApiService.getCryptoPrices();
-	}
-
-	@Get('news')
-	@ApiOperation({ summary: 'Get financial news' })
-	getFinancialNews() {
-		return this.externalApiService.getFinancialNews();
 	}
 }
