@@ -20,7 +20,7 @@ async function bootstrap() {
 	);
 
 	const config = new DocumentBuilder()
-		.setTitle('Financial Analysis API')
+		.setTitle('PoupAí API')
 		.setDescription('API para sistema de análise financeira')
 		.setVersion('1.0')
 		.addBearerAuth()
