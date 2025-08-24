@@ -11,7 +11,10 @@ export class CreateCategoryDto {
 	@IsHexColor()
 	color: string;
 
-	@ApiProperty({ example: 'Gastos com alimentação e bebidas', required: false })
+	@ApiProperty({
+		example: 'Gastos com alimentação e bebidas',
+		required: false,
+	})
 	@IsOptional()
 	@IsString()
 	description?: string;

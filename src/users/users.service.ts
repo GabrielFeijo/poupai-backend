@@ -73,6 +73,10 @@ export class UsersService {
 	async update(id: string, updateUserDto: UpdateUserDto) {
 		const user = await this.findOne(id);
 
+		if (!user) {
+			throw new NotFoundException(`User with ID ${id} not found`);
+		}
+
 		const updatedUser = await this.prisma.user.update({
 			where: { id },
 			data: updateUserDto,
